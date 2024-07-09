@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .news {
+        height: 1230px;
+        padding: 36px 20px 36px 15px;
+        gap: 100px;
+        border: 0px 0px 1px 0px;
+        opacity: 0px;
+        background-color: rgba(241, 241, 241, 1);
+      }
+      .header {
+        font-family: Kanit;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        text-align: left;
+        color: rgba(0, 0, 0, 1);
+        width: 1120px;
+        height: 22px;
+        gap: 0px;
+        opacity: 0px;
+      }
+      .img {
+        width: 24px;
+        height: 24px;
+        gap: 0px;
+        opacity: 0px;
+        gap: 752px;
+        opacity: 0px;
+      }
+      .head {
+        gap: 25px;
+        opacity: 0px;
+      }
+      .author {
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        text-align: left;
+        color: rgba(0, 0, 0, 1);
+        width: 124px;
+        height: 22px;
+        gap: 0px;
+        opacity: 0px;
+      }
+      .socials {
+        margin-left: 700px;
+      }
+      .lnkd {
+        width: 18px;
+        height: 18px;
+        top: 3px;
+        left: 3px;
+        gap: 0px;
+        opacity: 0px;
+      }
+      .fcbk {
+        width: 18px;
+        height: 18px;
+        top: 3px;
+        left: 3px;
+        gap: 0px;
+        opacity: 0px;
+      }
+      .twtt {
+        width: 18px;
+        height: 18px;
+        top: 3px;
+        left: 3px;
+        gap: 0px;
+        opacity: 0px;
+      }
+      .tit {
+        font-family: Inter;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 38px;
+        text-align: left;
+        color: rgba(0, 0, 0, 1);
+        margin-top: -60px;
+        margin-bottom: 30px;
+        width: 1020px;
+        height: 38px;
+        gap: 0px;
+        opacity: 0px;
+      }
+      .descr {
+        font-family: SF Pro Display;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: left;
+        width: 1120px;
+        height: 36px;
+        gap: 0px;
+        opacity: 0px;
+        color: rgba(0, 0, 0, 1);
+      }
+      .im {
+        width: 1080px;
+        height: 480px;
+        gap: 0px;
+        border-radius: 4px 0px 0px 0px;
+        opacity: 0px;
+      }
+      .body_des {
+        width: 1120px;
+        height: 350px;
+        gap: 24px;
+        opacity: 0px;
+      }
+      .body_title {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: left;
+        color: rgba(0, 0, 0, 1);
+        width: 129px;
+        height: 28px;
+        gap: 0px;
+        opacity: 0px;
+      }
+      .body_descr {
+        font-family: SF Pro Display;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: left;
+        color: rgba(0, 0, 0, 1);
+        width: 1100px;
+        height: 588px;
+        gap: 0px;
+        opacity: 0px;
+      }
+      .lst_images {
+        width: Fill (1, 120px) px;
+        height: Hug (24px) px;
+        gap: 947px;
+        opacity: 0px;
+      }
+      .heart {
+        width: 18px;
+        height: 18px;
+        top: 3px;
+        left: 3px;
+        gap: 0px;
+        opacity: 0px;
+      }
+      .heartsTitle {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: center;
+        color: rgba(183, 183, 183, 1);
+        width: 25px;
+        height: 18px;
+        gap: 0px;
+        opacity: 0px;
+      }
+      .commsDes {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: center;
+        color: rgba(183, 183, 183, 1);
+        width: 16px;
+        height: 18px;
+        gap: 0px;
+        opacity: 0px;
+      }
+      .comm {
+        width: 18px;
+        height: 18px;
+        top: 3px;
+        left: 3px;
+        gap: 0px;
+        opacity: 0px;
+      }
+      .bookmark {
+        width: 18px;
+        height: 18px;
+        top: 3px;
+        left: 3px;
+        gap: 0px;
+        opacity: 0px;
+      }
+      .footer1 {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: center;
+        color: rgba(8, 30, 52, 1);
+        width: 584px;
+        height: 18px;
+        gap: 0px;
+        opacity: 0.5px;
+        margin-left: 630px;
+      }
+      .footer2 {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: center;
+        color: rgba(8, 30, 52, 1);
+        width: 248px;
+        height: 18px;
+        gap: 0px;
+        opacity: 0px;
+        margin-left: 930px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h4 class="ms-5 header">medium alike</h4>
+      <img src="./assets/Left.png" alt="just img" class="mt-5 img ms-5" />
+    </header>
+
+    <main>
+      <div class="container">
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            // Retrieve the data from localStorage or sessionStorage
+            const storedData = localStorage.getItem("selectedData");
+            if (storedData) {
+              const data = JSON.parse(storedData);
+              console.log("data,", data);
+
+              const container = document.querySelector(".container");
+
+              container.innerHTML += `
+            <div class="news d-flex flex-column">
+              <div class="head d-flex flex-row">
+                <img src="./assets/author.png" alt="" />
+                <p class="author ms-0">${data.byline}</p>
+                <div class="socials d-flex flex-row">
+                  <img src="./assets/LinkedIn.png" alt="" class="lnkd" />
+                  <img src="./assets/Facebook Circled.png" alt="" class="fcbk" />
+                  <img src="./assets/Twitter.png" alt="" class="twtt" />
+                </div>
+              </div>
+              <div class="bod d-flex flex-column">
+                <p class="tit">${data.title}</p>
+                <p class="descr">${data.abstract}</p>
+                <img src="./assets/NYC_GettyImages-640006562.webp" alt="" class="mt-5 im"/>
+                <div class="body_des mt-5">
+                  <p class="body_title">Subheader</p>
+                  <p class="body_descr">
+                    ${data.title}
+                    ${data.abstract}
+                    ${data.per_facet}
+                  </p>
+                </div>
+                <div class="lst_images d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row justify-content-start gap-3">
+                    <div class="d-flex flex-row ms-2">
+                      <img src="./assets/Heart.png" alt="" class="heart" />
+                      <p class="heartsTitle">180</p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-start">
+                      <img src="./assets/Speech Bubble.png" alt="" class="comm" />
+                      <p class="commsDes">12</p>
+                    </div>
+                  </div>
+                  <img src="./assets/Bookmark.png" alt="" class="bookmark" />
+                </div>
+              </div>
+            </div>
+          `;
+            } else {
+              console.error("No data found in localStorage");
+            }
+          });
+        </script>
+        <!-- <div class="news d-flex flex-column">
+          <div class="head d-flex flex-row">
+            <img src="./assets/author.png" alt="" />
+            <p class="author ms-0">Authors Name</p>
+            <div class="socials d-flex flex-row">
+              <img src="./assets/LinkedIn.png" alt="" class="lnkd" />
+              <img src="./assets/Facebook Circled.png" alt="" class="fcbk" />
+              <img src="./assets/Twitter.png" alt="" class="twtt" />
+            </div>
+          </div>
+          <div class="bod d-flex flex-column">
+            <p class="tit">7 Practical CSS Tips</p>
+            <p class="descr">
+              How product designers can break from the status quo and help our
+              planet
+            </p>
+            <img
+              src="./assets/NYC_GettyImages-640006562.webp"
+              alt=""
+              class="mt-5 im"
+            />
+            <div class="body_des mt-5">
+              <p class="body_title">Subheader</p>
+              <p class="body_descr">
+                How long are you awake in the morning before you go online?
+                Perhaps it’s while you’re still lying in bed, using a news feed
+                or social media as the needed stimulant to push you out from
+                under the covers. Or maybe you wait to open your device until
+                after a warm shower and cup of coffee. If you use sleep tracking
+                apps, you might say you never signed off in the first place.
+                And, like millions of others during the pandemic, the internet
+                is probably what enabled you to stay in touch with family, or
+                complete entire years of work and/or school remotely. If this
+                sounds familiar, then you live in a part of the world where an
+                internet connection now counts as an essential utility — one
+                that’s as easy to take for granted as the natural gas heating
+                your shower water or the electricity powering your coffee maker.
+                But if you think we’re hyperconnected today, just wait.
+                Globally, just over 55% of today’s households have an internet
+                connection. This gap between the internet haves and have-nots is
+                referred to as the digital divide, and access is skewed toward
+                richer nations. The gap is projected to close in the next decade
+                as billions of homes connect to the internet for the first time
+                and by 2030 it’s estimated that the technology industry could
+                account for 20% of the global electricity demand. This presents
+                a troublesome dichotomy. On one hand, it supports livelihoods,
+                educations, and bolsters the global economy; on the other hand,
+                the increased usage of the apps, websites, and services that we
+                build will place an even greater strain on our
+                already-overloaded power grids.
+              </p>
+            </div>
+            <div class="lst_images d-flex flex-row justify-content-between">
+              <div class="d-flex flex-row justify-content-start gap-3">
+                <div class="d-flex flex-row ms-2">
+                  <img src="./assets/Heart.png" alt="" class="heart" />
+                  <p class="heartsTitle">180</p>
+                </div>
+                <div class="d-flex flex-row justify-content-start">
+                  <img src="./assets/Speech Bubble.png" alt="" class="comm" />
+                  <p class="commsDes">12</p>
+                </div>
+              </div>
+
+              <img src="./assets/Bookmark.png" alt="" class="bookmark" />
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </main>
+
+    <footer class="mt-5 d-flex flex-column">
+      <p class="footer1">
+        Credits: photos from Unsplash.com, icons from Icons8, graphics from
+        craftwork.design.
+      </p>
+      <p class="footer2">Made with ✨❤️ at nFactorial in 2022.</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/med-site/index.js"></script>
+    <!-- <script src="index.js"></script> -->
+  </body>
+</html>
